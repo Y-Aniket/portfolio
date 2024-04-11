@@ -25,3 +25,19 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader);
+
+/* Hero type effect */
+
+const type = document.querySelector('.typed');
+
+    if (type) {
+        let typed_string = type.getAttribute('data-typed-items');
+        typed_string = typed_string.split(',');
+        new Typed('.typed', {
+            strings: typed_string,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
+    }
