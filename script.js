@@ -88,4 +88,3 @@ function resumeActive() {
 }
 
 window.addEventListener('scroll', resumeActive);
-
